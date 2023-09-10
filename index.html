@@ -8,17 +8,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Weather App</h1>
+        <!-- Header -->
+        <h1 class="header">Weather App</h1>
         <div class="input-container">
             <input type="text" id="cityInput" placeholder="Enter city name">
             <button id="searchButton">Search</button>
         </div>
         <div class="weather-info">
-            <h2 id="locationName"></h2>
-            <div id="weatherIcon"></div>
-            <p id="temperature"></p>
-            <p id="weatherCondition"></p>
-            <p id="errorMessage"></p>
+            <!-- Location -->
+            <h2 id="locationName" class="location"></h2>
+            <!-- Weather Icon -->
+            <div id="weatherIcon" class="weather-icon"></div>
+            <!-- Temperature -->
+            <p id="temperature" class="temperature"></p>
+            <!-- Weather Condition -->
+            <p id="weatherCondition" class="weather-condition"></p>
+            <!-- Additional Weather Details -->
+            <p id="humidity" class="weather-detail"></p>
+            <p id="windSpeed" class="weather-detail"></p>
+            <p id="visibility" class="weather-detail"></p>
+            <!-- Unit Conversion -->
+            <div id="unitToggle" class="unit-toggle">
+                <label for="celsius">Celsius</label>
+                <input type="radio" id="celsius" name="unit" value="metric" checked>
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="radio" id="fahrenheit" name="unit" value="imperial">
+            </div>
+            <!-- Error Message -->
+            <p id="errorMessage" class="error-message"></p>
         </div>
     </div>
     <script src="script.js"></script>

@@ -1,167 +1,152 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set a background color for the body */
+/* Styling for the entire page background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #3498db; /* Attractive blue background color */
+    background-color: #3498db; /* A pleasing blue background color */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('default-background.jpg'); /* Default background image */
+    background-image: url('default-background.jpg'); /* A background image with a smooth transition effect */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image 0.5s; /* Smooth background image transition */
+    transition: background-image 0.5s; /* Smooth transition for background image */
 }
 
-/* Style the container for your content */
+/* Styling for the main content container */
 .container {
     max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
-    border-radius: 10px; /* Increased border radius for a modern look */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background for content */
+    border-radius: 10px; /* Adds a modern look with rounded corners */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-/* Style the header */
+/* Styling for the header */
 .header {
     color: #333;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Provides spacing below the header */
 }
 
-/* Style the input container */
+/* Styling for the input container */
 .input-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds space above the input container */
 }
 
-/* Style the text input */
+/* Styling for text input fields */
 input[type="text"] {
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    outline: none; /* Remove input field outline on focus */
+    outline: none; /* Removes the input field outline on focus */
 }
 
-/* Style the search button */
+/* Styling for the search button */
 button {
     padding: 10px 20px;
-    background-color: #007BFF; /* Eye-catching blue button */
+    background-color: #007BFF; /* A catchy blue button color */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s; /* Smooth button color transition */
+    margin-top: 10px; /* Adds space above the button */
+    transition: background-color 0.3s; /* Smooth button color transition on hover */
 }
 
 /* Change button color on hover */
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Scale up the button slightly on hover */
+    transform: scale(1.05); /* Slightly scales up the button on hover */
 }
 
-/* Style the weather information container */
+/* Styling for the weather information container */
 .weather-info {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds space above the weather information */
 }
 
-/* Style the weather icon */
+/* Styling for the weather icon */
 .weather-icon {
-    font-size: 60px; /* Larger weather icon for emphasis */
-    color: #333; /* Change the color to match your design */
+    font-size: 60px; /* Enlarges the weather icon for emphasis */
+    color: #333; /* Sets the color to match the design */
 }
 
-/* Style the location name */
+/* Styling for the location name */
 .location {
     font-size: 24px;
-    font-weight: bold; /* Bold location name */
-    margin-top: 10px;
+    font-weight: bold; /* Makes the location name bold */
+    margin-top: 10px; /* Adds space above the location name */
 }
 
-/* Style the temperature */
+/* Styling for the temperature */
 .temperature {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 10px; /* Adds space above the temperature */
 }
 
-/* Style the weather condition */
+/* Styling for the weather condition */
 .weather-condition {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 10px; /* Adds space above the weather condition */
 }
 
-/* Style additional weather details */
+/* Styling for additional weather details */
 .weather-detail {
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 5px; /* Adds space above additional weather details */
 }
 
-/* Style unit conversion toggle */
+/* Styling for the unit conversion toggle */
 .unit-toggle {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Adds space above the unit toggle */
 }
 
+/* Styling for unit toggle labels */
 .unit-toggle label {
-    margin-right: 20px; /* Increase the margin-right to add more space */
+    margin-right: 20px; /* Increases the margin-right to add more space between labels */
     color: #333;
     font-weight: bold;
 }
 
-/* Add margin to the Fahrenheit label */
+/* Adjusting margin for the Fahrenheit label */
 .unit-toggle label:last-child {
-    margin-right: 0; /* No margin on the last label (Fahrenheit) */
+    margin-right: 0; /* Removes margin on the last label (Fahrenheit) */
 }
 
-
-
-/* Style error messages */
+/* Styling for error messages */
 .error-message {
     color: red;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 10px; /* Adds space above error messages */
     font-size: 16px;
 }
 
-/* Add animation to the search button */
+/* Adding animation to the search button */
 button {
-    /* Existing button styles */
+    /* Preserving existing button styles */
     transition: background-color 0.3s, transform 0.2s ease-out;
 }
 
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Scale up the button slightly on hover */
-}
-
-/* Add fade-in animation for weather results */
+/* Adding a fade-in animation for weather results */
 .weather-info {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Add color change animation for temperature and weather condition text */
+/* Adding a color change animation for temperature and weather condition text */
 .temperature,
 .weather-condition {
     color: transparent;
@@ -169,13 +154,4 @@ button:hover {
     background-clip: text;
     -webkit-background-clip: text;
     animation: colorChange 1s ease-in-out forwards;
-}
-
-@keyframes colorChange {
-    0% {
-        color: transparent;
-    }
-    100% {
-        color: #333; /* Change the color to match your design */
-    }
 }
